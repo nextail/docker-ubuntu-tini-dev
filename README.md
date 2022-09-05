@@ -1,6 +1,6 @@
 # Docker image with development tools
 
-This is a Docker image based on [rubensa/ubuntu-tini-user](https://github.com/rubensa/docker-ubuntu-tini-user) 20.04 and includes various development tools.  This image includes [old openssl](https://www.openssl.org/source/old/) version builds from [rubensa/ubuntu-openssl-old](https://github.com/rubensa/docker-ubuntu-openssl-old) 20.04 to allow old Ruby versions to be installed.
+This is a Docker image based on [nextail/ubuntu-tini-user](https://github.com/nextail/docker-ubuntu-tini-user) 20.04 and includes various development tools.  This image includes [old openssl](https://www.openssl.org/source/old/) version builds from [nextail/ubuntu-openssl-old](https://github.com/nextail/docker-ubuntu-openssl-old) to allow old Ruby versions to be installed.
 
 ## Building
 
@@ -9,7 +9,7 @@ You can build the image like this:
 ```
 #!/usr/bin/env bash
 
-DOCKER_REPOSITORY_NAME="rubensa"
+DOCKER_REPOSITORY_NAME="nextail"
 DOCKER_IMAGE_NAME="ubuntu-tini-dev"
 DOCKER_IMAGE_TAG="20.04"
 
@@ -30,7 +30,7 @@ You can run the container like this (change --rm with -d if you don't want the c
 ```
 #!/usr/bin/env bash
 
-DOCKER_REPOSITORY_NAME="rubensa"
+DOCKER_REPOSITORY_NAME="nextail"
 DOCKER_IMAGE_NAME="ubuntu-tini-dev"
 DOCKER_IMAGE_TAG="20.04"
 
